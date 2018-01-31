@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI 日期选择器（Datepicker） - 动画</title>
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jqueryui/style.css">
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker();
+            $( "#anim" ).change(function() {
+                $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+            });
+        });
+    </script>
+</head>
+<body>
+
+<p>日期：<input type="text" id="datepicker" size="30"></p>
+
+</body>
+</html>
